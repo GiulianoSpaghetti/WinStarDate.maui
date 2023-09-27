@@ -25,9 +25,4 @@ public partial class MainPage : ContentPage
         risultato.Text =$"La data è: {data.Date.Date.ToUniversalTime().ToString("yy")}{data.Date.Date.ToUniversalTime().ToString("MM")}.{s}";
         Preferences.Set("Data", data.Date.ToString());
     }
-
-    private async void info_Click(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new InfoPage());
-    }
 }

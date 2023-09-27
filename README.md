@@ -1,6 +1,6 @@
 # WinStarDate.maui
 
-WinStarDarte in maui
+Un programma per calcolare la data stellare secondo la formulazione di kirk in maui
 
 # Donazione
 

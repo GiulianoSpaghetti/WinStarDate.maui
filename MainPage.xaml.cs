@@ -1,4 +1,6 @@
-﻿namespace WinStarDate.maui;
+﻿using System.Globalization;
+
+namespace WinStarDate.maui;
 
 public partial class MainPage : ContentPage
 {
@@ -24,5 +26,9 @@ public partial class MainPage : ContentPage
             s = "0" + s;
         risultato.Text =$"La data è: {data.Date.Date.ToUniversalTime().ToString("yy")}{data.Date.Date.ToUniversalTime().ToString("MM")}.{s}";
         Preferences.Set("Data", data.Date.ToString());
+    }
+    private void OnInfo_Click(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new InfoPage());
     }
 }

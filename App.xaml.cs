@@ -6,6 +6,10 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+#if WINDOWS
+        MainPage = new AppShellWindows();
+#else
+        MainPage = new AppShell();
+#endif
+    }
 }

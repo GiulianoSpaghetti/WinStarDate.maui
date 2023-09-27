@@ -9,6 +9,11 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
+    <ContentPage.MenuBarItems>
+        <MenuBarItem x:Name="Info" Text="?">
+            <MenuFlyoutItem x:Name="InfoMenu" Text="Informazioni" Clicked="OnInfo_Click" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
     <ContentPage.Content>
         <Grid x:Name="background">
         <Grid.RowDefinitions>

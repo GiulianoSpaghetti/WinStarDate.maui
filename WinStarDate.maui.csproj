@@ -61,12 +61,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="AppShellWindows.xaml.cs">
+	    <DependentUpon>AppShellWindows.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="InfoPage.xaml.cs">
 	    <DependentUpon>InfoPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="AppShellWindows.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="InfoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
